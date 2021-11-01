@@ -3,9 +3,9 @@
 # ToDo
 
 ## Menu Screen
-- Start
-- Retry
-- High Score 
+- Start == DONE
+- Retry == DONE
+- High Score == DONE
 - Store High Score
 
 ## Game mode
