@@ -9,8 +9,8 @@
 - Store High Score
 
 ## Game mode
-- Player movement
-- Player detection
+- Player movement == DONE
+- Player detection 
 - Enemy movement patterns
 - Hacking 
 - Arm/disable system 
