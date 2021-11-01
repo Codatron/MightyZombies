@@ -19,5 +19,5 @@
 # Win/Lose
 ##Victory state
 Player must go from point A to point B without being detected
-##Game Over state
+## Game Over state
 Player is detected
