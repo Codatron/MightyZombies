@@ -1,14 +1,14 @@
 # MightyZombies
 
-#ToDo
+# ToDo
 
-##Menu Screen
+## Menu Screen
 - Start
 - Retry
 - High Score 
 - Store High Score
 
-##Game mode
+## Game mode
 - Player movement
 - Player detection
 - Enemy movement patterns
@@ -16,7 +16,7 @@
 - Arm/disable system 
 - Reroute alarm systems to unlock doors 
 
-#Win/Lose
+# Win/Lose
 ##Victory state
 Player must go from point A to point B without being detected
 ##Game Over state
