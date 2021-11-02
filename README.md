@@ -10,7 +10,7 @@
 
 ## Game mode
 - Player movement == DONE
-- Player detection 
+- Player detection == DONE
 - Enemy movement patterns
 - Hacking 
 - Arm/disable system 
