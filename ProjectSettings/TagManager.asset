@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camera
+  - detected
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 1548536309
+    locked: 0
+  - name: Edge
+    uniqueID: 3193110613
     locked: 0
