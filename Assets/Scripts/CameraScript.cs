@@ -8,10 +8,12 @@ public class CameraScript : MonoBehaviour
     public float turnSpeed = 0.01f;
     float turnPosition;
     float appliedTurnSpeed;
+    public GameObject gameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
         appliedTurnSpeed = turnSpeed;
+        
     }
 
     // Update is called once per frame
@@ -22,4 +24,12 @@ public class CameraScript : MonoBehaviour
         if (Mathf.Abs(turnPosition) > rotationAngle / 2)
             appliedTurnSpeed *=-1;   
     }
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if(other.CompareTag("Player"))
+    //    {
+    //        gameOverPanel.SetActive(true);
+    //    }
+    //}
 }
