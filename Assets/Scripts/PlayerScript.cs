@@ -11,11 +11,10 @@ public class PlayerScript : MonoBehaviour
 
     public GameObject gameOverPanel;
 
-    int busted;
-
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        gameOverPanel.SetActive(false);
     }
     void Update()
     {
@@ -25,14 +24,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Camera"))
             detected = true;
-        busted++;
+  
             gameOverPanel.SetActive(true);
-
-        //if(busted > 2)
-        //{
-
-        //}
-
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
