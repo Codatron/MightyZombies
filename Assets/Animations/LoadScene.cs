@@ -13,7 +13,7 @@ public class LoadScene : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("SceneGame");
+        SceneManager.LoadScene("Level1");
     }
 
     public void HighScore()
