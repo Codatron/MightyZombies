@@ -170,9 +170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAngle: 90
-  turnSpeed: 0.01
+  turnSpeed: 0.1
   infiniteTurn: 0
   startTurnRight: 0
+  turnedOn: 1
 --- !u!114 &7412073940223378478
 MonoBehaviour:
   m_ObjectHideFlags: 0

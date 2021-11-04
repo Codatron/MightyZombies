@@ -9,6 +9,8 @@ public class CameraMove : MonoBehaviour
 	public float xMove = 200;
 	public float yMove = 200;
 	public float cameraVelocity = 0.5f;
+	bool xNeg;
+	bool yNeg;
 	
 	public float x = 0;
 	public float y = 0;
@@ -20,8 +22,17 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		
-    }
+		if(xMove<0)
+        {
+			xMove *= -1;
+			xNeg = true;
+        }
+		if (yMove < 0)
+		{
+			yMove *= -1;
+			yNeg = true;
+		}
+	}
 
     // Update is called once per frame
     void Update()
@@ -29,7 +40,10 @@ public class CameraMove : MonoBehaviour
         if (x < xMove && xDir == 1 && yDir == 0)
 		{
 			x = x + cameraVelocity;
-			transform.position = transform.position + new Vector3(cameraVelocity * Time.deltaTime, 0, 0); 
+			if(xNeg)
+				transform.position -=  new Vector3(cameraVelocity * Time.deltaTime, 0, 0); 
+			else
+				transform.position += new Vector3(cameraVelocity * Time.deltaTime, 0, 0);
 		}
 		if (!(x < xMove) && xDir == 1 && yDir == 0)
 		{
@@ -39,7 +53,10 @@ public class CameraMove : MonoBehaviour
 		if (y < yMove && xDir == 0 && yDir == 1)
 		{
 			y = y + cameraVelocity;
-			transform.position = transform.position + new Vector3(0, cameraVelocity * Time.deltaTime, 0); 
+			if (yNeg)
+				transform.position -=  new Vector3(0, cameraVelocity * Time.deltaTime, 0); 
+			else
+				transform.position += new Vector3(0, cameraVelocity * Time.deltaTime, 0);
 		}
 		if (!(y < yMove) && xDir == 0 && yDir == 1)
 		{
@@ -50,7 +67,10 @@ public class CameraMove : MonoBehaviour
         if (x > 0 && xDir == -1 && yDir == 0)
 		{
 			x = x - cameraVelocity;
-			transform.position = transform.position + new Vector3(-cameraVelocity * Time.deltaTime, 0, 0); 
+			if(xNeg)
+				transform.position -= new Vector3(-cameraVelocity * Time.deltaTime, 0, 0); 
+			else
+				transform.position += new Vector3(-cameraVelocity * Time.deltaTime, 0, 0);
 		}
 		if (!(x > 0) && xDir == -1 && yDir == 0)
 		{
@@ -60,7 +80,10 @@ public class CameraMove : MonoBehaviour
 		if (y > 0 && xDir == 0 && yDir == -1)
 		{
 			y = y - cameraVelocity;
-			transform.position = transform.position + new Vector3(0, -cameraVelocity * Time.deltaTime, 0); 
+			if(yNeg)
+				transform.position -= new Vector3(0, -cameraVelocity * Time.deltaTime, 0); 
+			else
+				transform.position += new Vector3(0, -cameraVelocity * Time.deltaTime, 0);
 		}
 		if (!(y > 0) && xDir == 0 && yDir == -1)
 		{

@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7412073940223378450, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
       propertyPath: m_Name
-      value: Camera (1)
+      value: Camera (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7412073940223378450, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
       propertyPath: m_IsActive
@@ -144,14 +144,6 @@ PrefabInstance:
     - target: {fileID: 7412073940223378451, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
       propertyPath: angle
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412073940223378451, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
-      propertyPath: turnSpeed
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412073940223378451, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
-      propertyPath: infiniteTurn
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}

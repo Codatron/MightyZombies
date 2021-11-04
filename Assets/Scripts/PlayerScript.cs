@@ -29,7 +29,11 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Camera"))
             detected = true;
         if(detected)
+        {
             gameOverPanel.SetActive(true);
+            speed = 0;
+        }
+            
         else
             gameOverPanel.SetActive(false);
 
