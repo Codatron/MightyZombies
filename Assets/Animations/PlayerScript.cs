@@ -9,11 +9,14 @@ public class PlayerScript : MonoBehaviour
     Rigidbody2D body;
     SpriteRenderer spriteRenderer;
     public float speed = 5;
+    GameObject gameOverPanel;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gameOverPanel = GameObject.Find("GameOverPanel");
+        gameOverPanel.SetActive(false);
     }
     void Update()
     {
@@ -25,12 +28,18 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Camera"))
             detected = true;
+        if(detected)
+            gameOverPanel.SetActive(true);
+        else
+            gameOverPanel.SetActive(false);
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Camera"))
             detected = false;
     }
+
     
 
 }
