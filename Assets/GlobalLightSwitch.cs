@@ -9,7 +9,6 @@ public class GlobalLightSwitch : MonoBehaviour
     void Start()
     {
         light2D = GetComponent<Light2D>();
-        light2D.enabled = !light2D.enabled;
     }
 
     // Update is called once per frame
