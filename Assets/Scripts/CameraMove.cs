@@ -12,11 +12,11 @@ public class CameraMove : MonoBehaviour
 	bool xNeg;
 	bool yNeg;
 	
-	public float x = 0;
-	public float y = 0;
+	float x = 0;
+	float y = 0;
 	
-	public int yDir = 0;
-	public int xDir = 1;
+	int yDir = 0;
+	int xDir = 1;
 	
 	
     // Start is called before the first frame update
