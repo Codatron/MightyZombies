@@ -49,17 +49,17 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0.21
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000550053be
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 1
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 21
-  m_PointLightOuterAngle: 87.18
-  m_PointLightInnerRadius: 1.45
-  m_PointLightOuterRadius: 4.19
+  m_PointLightInnerAngle: 20
+  m_PointLightOuterAngle: 90
+  m_PointLightInnerRadius: 3.8
+  m_PointLightOuterRadius: 5.62
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -146,8 +146,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  m_Sprite: {fileID: 1050065556000622730, guid: 25f0ca1211a913c4fb9f73fef16c9cfc, type: 3}
+  m_Color: {r: 0.3773585, g: 0.21537913, b: 0.21537913, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -169,7 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7e5d1031fa6f34ab0bda6e08e8a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 180
+  rotationAngle: 90
+  turnSpeed: 0.01
+  infiniteTurn: 0
+  startTurnRight: 0
 --- !u!114 &7412073940223378478
 MonoBehaviour:
   m_ObjectHideFlags: 0

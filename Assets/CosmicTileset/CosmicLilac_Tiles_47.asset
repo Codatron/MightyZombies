@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CosmicLilac_Tiles_47
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -458246348358201829, guid: 25f0ca1211a913c4fb9f73fef16c9cfc, type: 3}
-  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  m_Color: {r: 0.3207547, g: 0.16189036, b: 0.16189036, a: 1}
   m_Transform:
     e00: 1
     e01: 0

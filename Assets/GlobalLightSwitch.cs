@@ -15,7 +15,7 @@ public class GlobalLightSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.L))
             light2D.enabled = !light2D.enabled;
     }
 }
