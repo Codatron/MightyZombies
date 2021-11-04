@@ -6,7 +6,6 @@ public class DetectedTextScript : MonoBehaviour
 {
     TextMeshProUGUI textMesh;
     PlayerScript playerScript;
-   
     private void Start()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
