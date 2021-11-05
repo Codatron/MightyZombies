@@ -9,7 +9,7 @@ public class Level1Transition : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("SceneMenu");
+            SceneManager.LoadScene("Level3");
         }
     }
 }
