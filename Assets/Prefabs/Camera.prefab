@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7412073939278825044}
   - component: {fileID: 7412073939278825045}
+  - component: {fileID: 2440401051906217435}
   m_Layer: 0
   m_Name: Point Light 2D
   m_TagString: Untagged
@@ -72,6 +73,36 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!60 &2440401051906217435
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412073939278825047}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.8946437, y: 2.3662553}
+      - {x: -0.046293374, y: 0.092091024}
+      - {x: 0.050506875, y: 0.115900785}
+      - {x: 0.9762497, y: 2.3925943}
+      - {x: 0.016506806, y: 2.826291}
 --- !u!1 &7412073940223378450
 GameObject:
   m_ObjectHideFlags: 0

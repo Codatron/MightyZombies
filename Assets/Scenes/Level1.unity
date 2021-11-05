@@ -491,41 +491,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
---- !u!1 &85485278 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7412073939278825047, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
-  m_PrefabInstance: {fileID: 2137793948}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &85485280
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85485278}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.8946437, y: 2.3662553}
-      - {x: -0.046293374, y: 0.092091024}
-      - {x: 0.050506875, y: 0.115900785}
-      - {x: 0.9762497, y: 2.3925943}
-      - {x: 0.016506806, y: 2.826291}
 --- !u!1 &93361696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7412073939278825047, guid: d896cb10846c44a4d96b8e0d014b10b9, type: 3}
@@ -20149,7 +20114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517195586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.42, y: -16.5, z: 0}
+  m_LocalPosition: {x: 5.57, y: -17.86, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20792,11 +20757,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1868784826295995469, guid: caffe23387ba83a418cdcf3d423b5444, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.22
+      value: -7.52
       objectReference: {fileID: 0}
     - target: {fileID: 1868784826295995469, guid: caffe23387ba83a418cdcf3d423b5444, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.26
+      value: -5.19
       objectReference: {fileID: 0}
     - target: {fileID: 1868784826295995469, guid: caffe23387ba83a418cdcf3d423b5444, type: 3}
       propertyPath: m_LocalPosition.z
