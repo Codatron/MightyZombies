@@ -9,6 +9,7 @@ public class Terminal : MonoBehaviour
 {
     AudioSource AudioSource;
     BoxCollider2D BoxCollider2D;
+    Light2D Light2D;
     public static int activeTerminals;
     bool active;
     public GameObject tube;
@@ -17,6 +18,7 @@ public class Terminal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Light2D = GetComponent<Light2D>();
         AudioSource = GetComponent<AudioSource>();
         BoxCollider2D = GetComponent<BoxCollider2D>();
     }
@@ -31,8 +33,13 @@ public class Terminal : MonoBehaviour
                 activeTerminals++;
                 AudioSource.PlayOneShot(activate);
                 tube.GetComponent<Light2D>().enabled = true;
+                Light2D.color = Color.green;
                 if (activeTerminals > 3)
+                {
                     finale.GetComponent<finaleScript>().activated = true;
+                    finale.GetComponent<Light2D>().color = Color.green;
+                }
+                    
             }
         }
     }

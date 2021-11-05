@@ -8,6 +8,6 @@ public class finaleScript : MonoBehaviour
     public bool activated;
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Victory");
+        SceneManager.LoadScene("SceneMenu");
     }
 }
