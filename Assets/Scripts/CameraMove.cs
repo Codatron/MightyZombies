@@ -15,8 +15,8 @@ public class CameraMove : MonoBehaviour
 	float x = 0;
 	float y = 0;
 	
-	int yDir = 0;
-	int xDir = 1;
+	public int yDir = 0;
+	public int xDir = 1;
 	
 	float startposx;
 	float startposy;
@@ -51,7 +51,7 @@ public class CameraMove : MonoBehaviour
 			else
 				transform.position += new Vector3(cameraVelocity * Time.deltaTime, 0, 0);
 		}
-		if (transform.position.x >= startposx + xMove && xDir == 1 && yDir == 0)
+		if ((transform.position.x >= startposx + xMove || transform.position.x <= startposx - xMove) && xDir == 1 && yDir == 0)
 		{
 			xDir = 0;
 			yDir = 1;
@@ -64,7 +64,7 @@ public class CameraMove : MonoBehaviour
 			else
 				transform.position += new Vector3(0, cameraVelocity * Time.deltaTime, 0);
 		}
-		if (transform.position.y >= startposy + yMove && xDir == 0 && yDir == 1)
+		if ((transform.position.y >= startposy + yMove || transform.position.y <= startposy - yMove) && xDir == 0 && yDir == 1)
 		{
 			xDir = -1;
 			yDir = 0;
@@ -78,7 +78,7 @@ public class CameraMove : MonoBehaviour
 			else
 				transform.position += new Vector3(-cameraVelocity * Time.deltaTime, 0, 0);
 		}
-		if (transform.position.x <= startposx && xDir == -1 && yDir == 0)
+		if ((transform.position.x <= startposx && !(xNeg)) || (transform.position.x >= startposx && (xNeg)) && xDir == -1 && yDir == 0)
 		{
 			xDir = 0;
 			yDir = -1;
@@ -91,7 +91,7 @@ public class CameraMove : MonoBehaviour
 			else
 				transform.position += new Vector3(0, -cameraVelocity * Time.deltaTime, 0);
 		}
-		if (transform.position.y < startposy && xDir == 0 && yDir == -1)
+		if ((transform.position.y <= startposy && !(yNeg)) || (transform.position.y >= startposy && (yNeg)) && xDir == 0 && yDir == -1)
 		{
 			xDir = 1;
 			yDir = 0;
